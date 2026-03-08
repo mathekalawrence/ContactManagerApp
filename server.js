@@ -6,6 +6,8 @@ const dotenv = require("dotenv").config
 
 const port = process.env.PORT || 5001;
 
+app.use(express.json());
+
 app.get('/api/contactlist', (req,res) => {
     res.send("Get all contacts")
 });
