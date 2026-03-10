@@ -24,7 +24,7 @@ const createContact = (req, res) => {
 //@access public
 const getContact = (req, res) => {
     res.status(200).json({ message: `Get contact for ${req.params.id}` });
-};
+}; 
 
 //@desc Update contact
 //@route PUT /api/contacts/:id
